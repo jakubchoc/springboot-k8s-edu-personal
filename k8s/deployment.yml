@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: springboot-k8s-edu #set your docker image name
+  labels:
+    app: springboot-k8s-edu #set your docker image name
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: springboot-k8s-edu #set your docker image name
+  template:
+    metadata:
+      labels:
+        app: springboot-k8s-edu #set your docker image name
+    spec:
+      imagePullSecrets:
+        - name: dockerhub-secret # secrets we set in kubernetes
+      containers:
+        - name: springboot-k8s-edu
+          image: jakubchoc/springboot-k8s-edu:latest #set your docker username and image name
+          ports:
+            - containerPort: 8080
+          env:
+            - name: SPRING_PROFILES_ACTIVE
+              value: "prod"
