@@ -5,7 +5,7 @@ metadata:
   namespace: metallb-system
 spec:
   addresses:
-    - 172.236.15.203-172.236.15.210
+    - 172.236.0.220-172.236.0.254 #set ip address range for loadbalance
   autoAssign: true
 ---
 apiVersion: metallb.io/v1beta1

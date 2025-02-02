@@ -5,6 +5,7 @@ metadata:
 spec:
   selector:
     app: springboot-k8s-edu #set your application name
+    tier: backend
   ports:
     - protocol: TCP
       port: 8080
