@@ -5,7 +5,7 @@ metadata:
   namespace: metallb-system
 spec:
   addresses:
-    - 172.236.0.0/24  # set your ip range
+    - 172.236.0.220-172.236.0.230  # set your ip range
   autoAssign: true
 ---
 apiVersion: metallb.io/v1beta1
