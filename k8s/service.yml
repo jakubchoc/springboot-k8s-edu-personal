@@ -7,6 +7,6 @@ spec:
     app: springboot-k8s-edu #set your application name
   ports:
     - protocol: TCP
-      port: 8080
+      port: 80
       targetPort: 8080
   type: LoadBalancer
