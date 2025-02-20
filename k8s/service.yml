@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: springboot-k8s-edu-service #set your name + -service
+  name: springboot-k8s-edu-service 
 spec:
   selector:
-    app: springboot-k8s-edu #set your application name
+    app: springboot-k8s-edu
   ports:
     - protocol: TCP
       port: 80
       targetPort: 8080
-  type: LoadBalancer
+  type: ClusterIP
