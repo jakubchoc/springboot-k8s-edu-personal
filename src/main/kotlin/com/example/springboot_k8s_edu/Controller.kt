@@ -12,4 +12,9 @@ class Controller {
     fun hello(): String {
         return "Hello from Kube!"
     }
+
+    @GetMappint("/ola")
+    fun ola(): String {
+        return "Ola Senor!"
+    }
 }
