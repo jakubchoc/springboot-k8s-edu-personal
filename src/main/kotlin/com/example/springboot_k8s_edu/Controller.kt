@@ -13,7 +13,7 @@ class Controller {
         return "Hello from Kube!"
     }
 
-    @GetMappint("/ola")
+    @GetMapping("/ola")
     fun ola(): String {
         return "Ola Senor!"
     }
