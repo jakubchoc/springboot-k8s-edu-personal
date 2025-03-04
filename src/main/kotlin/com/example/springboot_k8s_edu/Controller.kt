@@ -20,6 +20,6 @@ class Controller {
 
     @GetMapping("/ahoj")
     fun ahoj(): String {
-        return "Ahoj!"
+        return "Ahoj!!!"
     }
 }
