@@ -17,4 +17,9 @@ class Controller {
     fun ola(): String {
         return "Ola Senor!"
     }
+
+    @GetMapping("/ahoj")
+    fun ahoj(): String {
+        return "Ahoj!"
+    }
 }
